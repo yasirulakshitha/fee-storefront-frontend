@@ -9,7 +9,7 @@ const AdminOrdersPage = () => {
     const fetchOrders = async () => {
       try {
         const token = await getToken();
-        const res = await fetch("http://localhost:8000/api/orders", {
+        const res = await fetch("https://fee-storefront-backend-hylf.onrender.com/api/orders", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

@@ -18,7 +18,7 @@ function AdminCategoriesPage() {
 
     const token = await window.Clerk?.session?.getToken();
 
-    const res = await fetch("http://localhost:8000/api/categories", {
+    const res = await fetch("https://fee-storefront-backend-hylf.onrender.com/api/categories", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

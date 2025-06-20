@@ -11,7 +11,7 @@ function Shop() {
 
   const fetchProducts = async (categoryId = null) => {
     try {
-      let url = "http://localhost:8000/api/products";
+      let url = "https://fee-storefront-backend-hylf.onrender.com/api/products";
       if (categoryId && categoryId !== "ALL") {
         url += `?categoryId=${categoryId}`;
       }

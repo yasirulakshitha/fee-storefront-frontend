@@ -41,7 +41,7 @@ function AdminProductsPage() {
 
     const token = await window.Clerk?.session?.getToken();
 
-    const res = await fetch("http://localhost:8000/api/products", {
+    const res = await fetch("https://fee-storefront-backend-hylf.onrender.com/api/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

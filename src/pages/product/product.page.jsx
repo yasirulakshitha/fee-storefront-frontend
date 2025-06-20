@@ -6,7 +6,7 @@ function ProductPage() {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/products/${id}`)
+    fetch(`https://fee-storefront-backend-hylf.onrender.com/api/products/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.error("Failed to load product", err));
